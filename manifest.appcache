@@ -1,11 +1,11 @@
 CACHE MANIFEST
-# Revision 1398845396287
+# Revision 1398949505828
 
 CACHE:
 index.html
 basics/README.html
-basics/comments.html
 basics/equality.html
+basics/comments.html
 basics/types.html
 basics/variables.html
 gitbook/app.js
