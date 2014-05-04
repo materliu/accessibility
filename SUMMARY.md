@@ -4,14 +4,12 @@
     * [何谓“可用性”](basics/comments.md)
     * [如何衡量可用性](basics/variables.md)
     * [高可用性的意义](basics/types.md)
-
 * [弱网络优化](basics/README.md)
     * [什么是低速网络](basics/README.md)
     * [http连接数](basics/README.md)
     * [为什么是14k](basics/README.md)
     * [302重定向](basics/README.md)
     * [不同网络情况的差异优化](basics/README.md)
-
 * [高效率的利用缓存](basics/README.md)
     * [缓存有什么用](basics/README.md)
     * [http缓存](basics/README.md)
@@ -19,7 +17,6 @@
     * [离线功能的改进](basics/README.md)
     * [localStorage](basics/README.md)
     * [sqlite](basics/README.md)
-
 * [性能优化](basics/README.md)
     * [设备性能（电量，cpu，gpu)](basics/README.md)
     * [图片、base64还是css3](basics/README.md)
@@ -28,7 +25,6 @@
     * 滚动加载(basics/README.md)
     * iscroll优化(basics/README.md)
     * 综合：首屏加载优化(basics/README.md)
-
 * [交互优化](basics/README.md)
     * [怎样才算好的交互](basics/README.md)
     * [滚动](basics/README.md)
@@ -40,8 +36,6 @@
         * [单指](basics/README.md)
         * [多指](basics/README.md)
     * [其他](basics/README.md)
-
-
 * [用户端监控](basics/README.md)
     * [用户那里发生了什么](basics/README.md)
     * [监控运行错误](basics/README.md)
@@ -50,7 +44,6 @@
         * [关注性能关键点](basics/README.md)
     * [监控后台接口](basics/README.md)
     * [监控自动化](basics/README.md)
-
 * [终端适配](basics/README.md)
     * [各个css属性的差异(display:flex)](basics/README.md)
     * [响应式布局](basics/README.md)
@@ -58,7 +51,6 @@
     * [视网膜屏的优化](basics/README.md)
     * [ES5的API实现差异](basics/README.md)
     * [Android 2.x 4.x等等区别](basics/README.md)
-
 * [可用性无障碍](basics/README.md)
     * [WCAG1.0和WCAG2.0](basics/README.md)
     * [高可用性界面-语义化的html5元素](basics/README.md)
@@ -66,13 +58,11 @@
     * [JavaScript 无障碍化](basics/README.md)
     * [无障碍化最佳实践](basics/README.md)(basics/README.md)
     * [移动Web的无障碍](basics/README.md)
-
 * [可用性工具，调试，测试等](basics/README.md)
     * [远程调试](basics/README.md)
     * [UI调试](basics/README.md)
     * [性能测试](basics/README.md)
     * [调试工具](basics/README.md)
-
 * [常见问题解决方案](basics/README.md)
     * [关于web app的相关设置](basics/README.md)
     * [关于跨域](basics/README.md)
