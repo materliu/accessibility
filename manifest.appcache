@@ -1,10 +1,9 @@
 CACHE MANIFEST
-# Revision 1398949505828
+# Revision 1399207417176
 
 CACHE:
 index.html
 basics/README.html
-basics/equality.html
 basics/comments.html
 basics/types.html
 basics/variables.html
