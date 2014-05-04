@@ -1,8 +1,82 @@
 # Summary
 
-* [Basics](basics/README.md)
-    * [Comments](basics/comments.md)
-    * [Variables](basics/variables.md)
-    * [Types](basics/types.md)
-    * [Equality](basics/equality.md)
+* [可用性概要](basics/README.md)
+    * [何谓“可用性”](basics/comments.md)
+    * [如何衡量可用性](basics/variables.md)
+    * [高可用性的意义](basics/types.md)
 
+* [弱网络优化]
+    * [什么是低速网络]
+    * [http连接数]
+    * [为什么是14k]
+    * [302重定向]
+    * [不同网络情况的差异优化]
+
+* [高效率的利用缓存]
+    * [缓存有什么用]
+    * [http缓存]
+    * [离线web应用]
+    * [离线功能的改进]
+    * [localStorage]
+    * [sqlite]
+
+* [性能优化]
+    * [设备性能（电量，cpu，gpu)]
+    * [图片、base64还是css3]
+    * [让动画更畅快]
+    * GPS定位
+    * 滚动加载
+    * iscroll优化
+    * 综合：首屏加载优化
+
+* [交互优化]
+    * [怎样才算好的交互]
+    * [滚动]
+    * [点击反馈]
+        * [active]
+        * [click和tap]
+        * [focus]
+    * [手势]
+        * [单指]
+        * [多指]
+    * [其他]
+
+
+* [用户端监控]
+    * [用户那里发生了什么]
+    * [监控运行错误]
+    * [监测页面速度]
+        * [h5测速]
+        * [关注性能关键点]
+    * [监控后台接口]
+    * [监控自动化]
+
+* [终端适配]
+    * [各个css属性的差异(display:flex)]
+    * [响应式布局]
+    * [media queries]
+    * [视网膜屏的优化]
+    * [ES5的API实现差异]
+    * [Android 2.x 4.x等等区别]
+
+* [可用性无障碍]
+    * [WCAG1.0和WCAG2.0]
+    * [高可用性界面-语义化的html5元素]
+    * [ARIA 无障碍化属性]
+    * [JavaScript 无障碍化]
+    * [无障碍化最佳实践]
+    * [移动Web的无障碍]
+
+* [可用性工具，调试，测试等]
+    * [远程调试]
+    * [UI调试]
+    * [性能测试]
+    * [调试工具]
+
+* [常见问题解决方案]
+    * [关于web app的相关设置]
+    * [关于跨域]
+    * [关于点击区域]
+    * [消除自带高亮框]
+    * [关于锁定屏幕方向]
+    * [关于软键盘弹出]
