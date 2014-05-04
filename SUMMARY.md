@@ -5,78 +5,78 @@
     * [如何衡量可用性](basics/variables.md)
     * [高可用性的意义](basics/types.md)
 
-* [弱网络优化]
-    * [什么是低速网络]
-    * [http连接数]
-    * [为什么是14k]
-    * [302重定向]
-    * [不同网络情况的差异优化]
+* [弱网络优化](basics/README.md)
+    * [什么是低速网络](basics/README.md)
+    * [http连接数](basics/README.md)
+    * [为什么是14k](basics/README.md)
+    * [302重定向](basics/README.md)
+    * [不同网络情况的差异优化](basics/README.md)
 
-* [高效率的利用缓存]
-    * [缓存有什么用]
-    * [http缓存]
-    * [离线web应用]
-    * [离线功能的改进]
-    * [localStorage]
-    * [sqlite]
+* [高效率的利用缓存](basics/README.md)
+    * [缓存有什么用](basics/README.md)
+    * [http缓存](basics/README.md)
+    * [离线web应用](basics/README.md)
+    * [离线功能的改进](basics/README.md)
+    * [localStorage](basics/README.md)
+    * [sqlite](basics/README.md)
 
-* [性能优化]
-    * [设备性能（电量，cpu，gpu)]
-    * [图片、base64还是css3]
-    * [让动画更畅快]
-    * GPS定位
-    * 滚动加载
-    * iscroll优化
-    * 综合：首屏加载优化
+* [性能优化](basics/README.md)
+    * [设备性能（电量，cpu，gpu)](basics/README.md)
+    * [图片、base64还是css3](basics/README.md)
+    * [让动画更畅快](basics/README.md)
+    * GPS定位(basics/README.md)
+    * 滚动加载(basics/README.md)
+    * iscroll优化(basics/README.md)
+    * 综合：首屏加载优化(basics/README.md)
 
-* [交互优化]
-    * [怎样才算好的交互]
-    * [滚动]
-    * [点击反馈]
-        * [active]
-        * [click和tap]
-        * [focus]
-    * [手势]
-        * [单指]
-        * [多指]
-    * [其他]
+* [交互优化](basics/README.md)
+    * [怎样才算好的交互](basics/README.md)
+    * [滚动](basics/README.md)
+    * [点击反馈](basics/README.md)
+        * [active](basics/README.md)
+        * [click和tap](basics/README.md)
+        * [focus](basics/README.md)
+    * [手势](basics/README.md)
+        * [单指](basics/README.md)
+        * [多指](basics/README.md)
+    * [其他](basics/README.md)
 
 
-* [用户端监控]
-    * [用户那里发生了什么]
-    * [监控运行错误]
-    * [监测页面速度]
-        * [h5测速]
-        * [关注性能关键点]
-    * [监控后台接口]
-    * [监控自动化]
+* [用户端监控](basics/README.md)
+    * [用户那里发生了什么](basics/README.md)
+    * [监控运行错误](basics/README.md)
+    * [监测页面速度](basics/README.md)
+        * [h5测速](basics/README.md)
+        * [关注性能关键点](basics/README.md)
+    * [监控后台接口](basics/README.md)
+    * [监控自动化](basics/README.md)
 
-* [终端适配]
-    * [各个css属性的差异(display:flex)]
-    * [响应式布局]
-    * [media queries]
-    * [视网膜屏的优化]
-    * [ES5的API实现差异]
-    * [Android 2.x 4.x等等区别]
+* [终端适配](basics/README.md)
+    * [各个css属性的差异(display:flex)](basics/README.md)
+    * [响应式布局](basics/README.md)
+    * [media queries](basics/README.md)
+    * [视网膜屏的优化](basics/README.md)
+    * [ES5的API实现差异](basics/README.md)
+    * [Android 2.x 4.x等等区别](basics/README.md)
 
-* [可用性无障碍]
-    * [WCAG1.0和WCAG2.0]
-    * [高可用性界面-语义化的html5元素]
-    * [ARIA 无障碍化属性]
-    * [JavaScript 无障碍化]
-    * [无障碍化最佳实践]
-    * [移动Web的无障碍]
+* [可用性无障碍](basics/README.md)
+    * [WCAG1.0和WCAG2.0](basics/README.md)
+    * [高可用性界面-语义化的html5元素](basics/README.md)
+    * [ARIA 无障碍化属性](basics/README.md)
+    * [JavaScript 无障碍化](basics/README.md)
+    * [无障碍化最佳实践](basics/README.md)(basics/README.md)
+    * [移动Web的无障碍](basics/README.md)
 
-* [可用性工具，调试，测试等]
-    * [远程调试]
-    * [UI调试]
-    * [性能测试]
-    * [调试工具]
+* [可用性工具，调试，测试等](basics/README.md)
+    * [远程调试](basics/README.md)
+    * [UI调试](basics/README.md)
+    * [性能测试](basics/README.md)
+    * [调试工具](basics/README.md)
 
-* [常见问题解决方案]
-    * [关于web app的相关设置]
-    * [关于跨域]
-    * [关于点击区域]
-    * [消除自带高亮框]
-    * [关于锁定屏幕方向]
-    * [关于软键盘弹出]
+* [常见问题解决方案](basics/README.md)
+    * [关于web app的相关设置](basics/README.md)
+    * [关于跨域](basics/README.md)
+    * [关于点击区域](basics/README.md)
+    * [消除自带高亮框](basics/README.md)
+    * [关于锁定屏幕方向](basics/README.md)
+    * [关于软键盘弹出](basics/README.md)
