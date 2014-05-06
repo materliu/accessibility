@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="materliu/accessibility" data-level="8" data-basepath=".." data-revision="1399363235163">
+    <div class="book" data-github="materliu/accessibility" data-level="8" data-basepath=".." data-revision="1399375097846">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -698,28 +698,30 @@
 <p>为什么这么说，我们设想一下，你现在实现的是一个webApp，其中存在大量的js代码，动态的修改你的页面结构，那么最初优良设计的标签结构可能很快变得混乱不堪。那如何解决这个问题呢，这也就引出了我们下边要提到的WAI(web accessibility Initiative)和ARIA(Accessible Rich Internet Applications)标准。</p>
 <p>WAI-ARIA标准的设计初衷是希望我们开发者在设计网站的时候能够加入更多的无障碍信息来帮助残障人士更好的获取我们页面的相关信息，ARIR中role， relationship， status， property的概念的使用，可以提供给读屏软件足够充分的信息来实现这一目的。</p>
 <p>举例来说，你需要定义一个同时允许输入和下拉选择的组合下拉列表框，如果按照html4时代的写法，我们可能会像下边这样写：</p>
-<pre><code>&lt;!-- 示例一 --&gt;
-&lt;input class=&quot;combobox-input&quot; type=&quot;text&quot;/&gt;
-&lt;ul class=&quot;chose-list&quot;&gt;
-    &lt;li class=&quot;option&quot;&gt;option1&lt;/li&gt;
-    &lt;li class=&quot;option&quot;&gt;option2&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre><p>然后通过css和js的修饰来进行ul的显示隐藏，选择等， 这对于读屏软件极其不友好。</p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- 示例一 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"combobox-input"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"chose-list"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"option"</span>&gt;</span>option1<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"option"</span>&gt;</span>option2<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<p>然后通过css和js的修饰来进行ul的显示隐藏，选择等， 这对于读屏软件极其不友好。</p>
 <p>使用了ARIA就不一样了，下边是www.w3.org给出的一个标准示例, 我做了一些修改来使它更易于我们说明问题：</p>
-<pre><code>&lt;!-- 示例二 --&gt;
-&lt;input class=&quot;combobox-input&quot;
-       type=&quot;text&quot;
-       role=&quot;combobox&quot;
-       aria-activedescendant=&quot;option2&quot;
-       aria-autocomplete=&quot;list&quot;
-       aria-expanded=&quot;true&quot;
-       aria-label=&quot;Tag&quot;
-       aria-owns=&quot;chose-list&quot;/&gt;
-&lt;ul class=&quot;chose-list&quot; id=&quot;chose-list&quot; role=&quot;listbox&quot;&gt;
-    &lt;li class=&quot;option&quot; id=&quot;option1&quot; role=&quot;option&quot;&gt;option1&lt;/li&gt;
-    &lt;li class=&quot;option&quot; id=&quot;option2&quot; role=&quot;option&quot;&gt;option2&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre><p>以下测试结果均在MAC平台下chrome中进行，使用voiceover读屏软件, 稍后如果有时间我会补齐国内读屏软件的测试情况，因为我用的英文版的系统，所以读屏也以英文为主。
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- 示例二 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"combobox-input"</span>
+       <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span>
+       <span class="hljs-attribute">role</span>=<span class="hljs-value">"combobox"</span>
+       <span class="hljs-attribute">aria-activedescendant</span>=<span class="hljs-value">"option2"</span>
+       <span class="hljs-attribute">aria-autocomplete</span>=<span class="hljs-value">"list"</span>
+       <span class="hljs-attribute">aria-expanded</span>=<span class="hljs-value">"true"</span>
+       <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"Tag"</span>
+       <span class="hljs-attribute">aria-owns</span>=<span class="hljs-value">"chose-list"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"chose-list"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"chose-list"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"listbox"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"option"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"option1"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"option"</span>&gt;</span>option1<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"option"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"option2"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"option"</span>&gt;</span>option2<span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+<p>以下测试结果均在MAC平台下chrome中进行，使用voiceover读屏软件, 稍后如果有时间我会补齐国内读屏软件的测试情况，因为我用的英文版的系统，所以读屏也以英文为主。
 在示例一中，我们将光标焦点定位到input元素内，会提示：&quot;edit text blank&quot;中文就是&quot;编辑文本空白&quot; 对于盲人用户来说，完全不知道这里要做什么。
 而在示例二中，则会提示：&quot;Tag combo box&quot;中文则是&quot;Tag组合框&quot;，盲人用户就会知道这里是用来输入Tag的一个组合下拉列表框。</p>
 <p>各项属性的意义：</p>
