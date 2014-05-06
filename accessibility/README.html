@@ -3,7 +3,7 @@
     <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
         
         <meta charset="UTF-8">
-        <title>如何衡量可用性 | 构建高可用性的移动Web应用</title>
+        <title>可用性无障碍 | 构建高可用性的移动Web应用</title>
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="robots" content="index, follow">
@@ -13,13 +13,13 @@
         <meta name="generator" content="www.gitbook.io">
 
         
-        <link rel="next" href="../basics/types.html" />
+        <link rel="next" href="../basics/README.html" />
         
         
-        <link rel="prev" href="../basics/comments.html" />
+        <link rel="prev" href="../basics/README.html" />
         
 
-        <meta property="og:title" content="如何衡量可用性 | 构建高可用性的移动Web应用">
+        <meta property="og:title" content="可用性无障碍 | 构建高可用性的移动Web应用">
         <meta property="og:site_name" content="构建高可用性的移动Web应用">
         <meta property="og:type" content="book">
         <meta property="og:locale" content="en_US">
@@ -42,7 +42,7 @@
 
 
         
-    <div class="book" data-github="materliu/accessibility" data-level="1.2" data-basepath=".." data-revision="1399362455116">
+    <div class="book" data-github="materliu/accessibility" data-level="8" data-basepath=".." data-revision="1399362455116">
     <div class="book-header">
     <!-- Actions Left -->
     
@@ -108,7 +108,7 @@
             <a href="https://github.com/materliu/accessibility/issues" target="blank">Questions and Issues</a>
         </li>
         <li>
-            <a href="https://github.com/materliu/accessibility/edit/master/basics/variables.md" target="blank">Edit and Contribute</a>
+            <a href="https://github.com/materliu/accessibility/edit/master/accessibility/README.md" target="blank">Edit and Contribute</a>
         </li>
         <li class="divider"></li>
         
@@ -670,7 +670,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 40%;min-width: 20%;"></div>
+        <div class="inner" style="width: 100%;min-width: 80%;"></div>
     </div>
     <div class="chapters">
     
@@ -680,41 +680,51 @@
     
         <a href="../basics/variables.html" title="如何衡量可用性" class="chapter done " data-progress="1.2" style="left: 40%;"></a>
     
-        <a href="../basics/types.html" title="高可用性的意义" class="chapter  " data-progress="1.3" style="left: 60%;"></a>
+        <a href="../basics/types.html" title="高可用性的意义" class="chapter done " data-progress="1.3" style="left: 60%;"></a>
     
-        <a href="../basics/README.html" title="关于软键盘弹出" class="chapter  " data-progress="10.6" style="left: 80%;"></a>
+        <a href="../basics/README.html" title="关于软键盘弹出" class="chapter done " data-progress="10.6" style="left: 80%;"></a>
     
-        <a href="../accessibility/README.html" title="可用性无障碍" class="chapter  new-chapter" data-progress="8" style="left: 100%;"></a>
+        <a href="../accessibility/README.html" title="可用性无障碍" class="chapter done new-chapter" data-progress="8" style="left: 100%;"></a>
     
     </div>
 </div>
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_7">
+                    <section class="normal" id="section-gitbook_2">
                     
-                        <h1 id="variables">Variables</h1>
-<p>The first step towards really understanding programming is looking back at algebra. If you remember it from school, algebra starts with writing terms such as the following.</p>
-<pre><code>3 + 5 = 8
-</code></pre><p>You start performing calculations when you introduce an unknown, for example x below:</p>
-<pre><code>3 + x = 8
-</code></pre><p>Shifting those around you can determine x:</p>
-<pre><code>x = 8 - 3
--&gt; x = 5
-</code></pre><p>When you introduce more than one you make your terms more flexible - you are using variables:</p>
-<pre><code>x + y = 8
-</code></pre><p>You can change the values of x and y and the formula can still be true:</p>
-<pre><code>x = 4
-y = 4
-</code></pre><p>or</p>
-<pre><code>x = 3
-y = 5
-</code></pre><p>The same is true for programming languages. In programming, variables are containers for values that change. Variables can hold all kind of values and also the results of computations. Variables have a name and a value separated by an equals sign (=). Variable names can be any letter or word, but bear in mind that there are restrictions from language to language of what you can use, as some words are reserved for other functionality.</p>
-<p>Let&#39;s check out how it works in Javascript, The following code defines two variables, computes the result of adding the two and defines this result as a value of a third variable.</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> x = <span class="hljs-number">5</span>;
-<span class="hljs-keyword">var</span> y = <span class="hljs-number">6</span>;
-<span class="hljs-keyword">var</span> result = x + y;
-</code></pre>
+                        <h1 id="basics-about-accessibility">Basics about Accessibility</h1>
+<p>当你设计你的网站的时候，你一定要保证你的程序可以被任何的用户访问，即使是那些需要借助读屏软件等辅助设备的用户。为了做到这一点，你就必须保证使用的html标签是具有充分的语义化特征。尽可能保持html标签的结构简单可以在一定程度上实现语义化，但仅仅靠这些是无法达到高可用性的，即使html5引入了更多类似于header, section, sidebar, nav, footer这样高语义化的标签也力不从心。</p>
+<p>为什么这么说，我们设想一下，你现在实现的是一个webApp，其中存在大量的js代码，动态的修改你的页面结构，那么最初优良设计的标签结构可能很快变得混乱不堪。那如何解决这个问题呢，这也就引出了我们下边要提到的WAI(web accessibility Initiative)和ARIA(Accessible Rich Internet Applications)标准。</p>
+<p>WAI-ARIA标准的设计初衷是希望我们开发者在设计网站的时候能够加入更多的无障碍信息来帮助残障人士更好的获取我们页面的相关信息，ARIR中role， relationship， status， property的概念的使用，可以提供给读屏软件足够充分的信息来实现这一目的。</p>
+<p>举例来说，你需要定义一个同时允许输入和下拉选择的组合下拉列表框，如果按照html4时代的写法，我们可能会像下边这样写：</p>
+<pre><code>&lt;!-- 示例一 --&gt;
+&lt;input class=&quot;combobox-input&quot; type=&quot;text&quot;/&gt;
+&lt;ul class=&quot;chose-list&quot;&gt;
+    &lt;li class=&quot;option&quot;&gt;option1&lt;/li&gt;
+    &lt;li class=&quot;option&quot;&gt;option2&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre><p>然后通过css和js的修饰来进行ul的显示隐藏，选择等， 这对于读屏软件极其不友好。</p>
+<p>使用了ARIA就不一样了，下边是www.w3.org给出的一个标准示例, 我做了一些修改来使它更易于我们说明问题：</p>
+<pre><code>&lt;!-- 示例二 --&gt;
+&lt;input class=&quot;combobox-input&quot;
+       type=&quot;text&quot;
+       role=&quot;combobox&quot;
+       aria-activedescendant=&quot;option2&quot;
+       aria-autocomplete=&quot;list&quot;
+       aria-expanded=&quot;true&quot;
+       aria-label=&quot;Tag&quot;
+       aria-owns=&quot;chose-list&quot;/&gt;
+&lt;ul class=&quot;chose-list&quot; id=&quot;chose-list&quot; role=&quot;listbox&quot;&gt;
+    &lt;li class=&quot;option&quot; id=&quot;option1&quot; role=&quot;option&quot;&gt;option1&lt;/li&gt;
+    &lt;li class=&quot;option&quot; id=&quot;option2&quot; role=&quot;option&quot;&gt;option2&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre><p>以下测试结果均在MAC平台下chrome中进行，使用voiceover读屏软件, 稍后如果有时间我会补齐国内读屏软件的测试情况，因为我用的英文版的系统，所以读屏也以英文为主。
+在示例一中，我们将光标焦点定位到input元素内，会提示：&quot;edit text blank&quot;中文就是&quot;编辑文本空白&quot; 对于盲人用户来说，完全不知道这里要做什么。
+而在示例二中，则会提示：&quot;Tag combo box&quot;中文则是&quot;Tag组合框&quot;，盲人用户就会知道这里是用来输入Tag的一个组合下拉列表框，</p>
+<p>各项属性的意义：</p>
+<p>aria-label和role是最好理解的，aria-label作为一个读屏提示存在，读屏软件会首先读label中的值，role则是提示当前标签所扮演的角色。html5规定，我们可以按照ARIA标准中的规定对html元素设定相关role和aria-*属性，在html4中则不支持这样做。同时html5为一些特定的元素隐式赋予了role属性，比如说html中的input type=&quot;checkbox&quot;元素，默认就会有一个role=&quot;checkbox&quot;,对于这样的元素，我们要切记不要再画蛇添足或者弄巧成拙的非必要的修改其role属性。不仅仅是改变了其默认的语义含义，还有可能存在我们潜在难于发现的错误。但有些情况下又要具体分析，举例来说，有时候我们会使用a标签来模拟一个提交按钮，在提交的时候进行一些表单验证的工作。默认情况下，a标签的role属性是link，显然不适用于我们上边提到的这种使用场景，那就需要我们显式修改其role属性为button。role属性的修改必然不是随心所欲的，a标签就不适合做listbox，所以html5中也规定了某一个元素都可以被赋予哪些role属性，比如说a就只能被赋予：button, checkbox, link, menuitem, menuitemcheckbox, menuitemradio, tab, treeitem中的一种。html5规范中维护了这样一个清单，哪些元素有隐式的role属性，以及可以被显式修改的role属性的范围，可以参见： <a href="http://www.w3.org/html/wg/drafts/html/master/dom.html#wai-aria" target="_blank">http://www.w3.org/html/wg/drafts/html/master/dom.html#wai-aria</a>。只是看规范可能不是那么容易理解，可以参见另一个网站，上边通过各种示例来说明各个属性的应用，参见： <a href="http://test.cita.illinois.edu/" target="_blank">http://test.cita.illinois.edu/</a></p>
+<p>至于上边提到的其他属性，在后边的章节中我也将为大家一一详细解释。</p>
 
                     
                     </section>
@@ -724,10 +734,10 @@ y = 5
         </div>
 
         
-        <a href="../basics/comments.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../basics/README.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../basics/types.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../basics/README.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
