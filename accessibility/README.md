@@ -17,9 +17,11 @@ WAI-ARIA标准的设计初衷是希望我们开发者在设计网站的时候能
 </ul>
 ```
 
-然后通过css和js的修饰来进行ul的显示隐藏，选择等， 这对于读屏软件及其不友好。
+
+然后通过css和js的修饰来进行ul的显示隐藏，选择等， 这对于读屏软件极其不友好。
 
 使用了ARIA就不一样了，下边是www.w3.org给出的一个标准示例, 我做了一些修改来使它更易于我们说明问题：
+
 
 ```
 <!-- 示例二 -->
@@ -43,7 +45,8 @@ WAI-ARIA标准的设计初衷是希望我们开发者在设计网站的时候能
 
 各项属性的意义：
 
-aria-label和role是最好理解的，aria-label作为一个读屏提示存在，读屏软件会首先读label中的值，role则是提示当前标签所扮演的角色。html5规定，我们可以按照ARIA标准中的规定对html元素设定相关role和aria-*属性，在html4中则不支持这样做。同时html5为一些特定的元素隐式赋予了role属性，比如说html中的input type="checkbox"元素，默认就会有一个role="checkbox",对于这样的元素，我们要切记不要再画蛇添足或者弄巧成拙的非必要的修改其role属性。不仅仅是改变了其默认的语义含义，还有可能存在我们潜在难于发现的错误。但有些情况下又要具体分析，举例来说，有时候我们会使用a标签来模拟一个提交按钮，在提交的时候进行一些表单验证的工作。默认情况下，a标签的role属性是link，显然不适用于我们上边提到的这种使用场景，那就需要我们显式修改其role属性为button。role属性的修改必然不是随心所欲的，a标签就不适合做listbox，所以html5中也规定了某一个元素都可以被赋予哪些role属性，比如说a就只能被赋予：button, checkbox, link, menuitem, menuitemcheckbox, menuitemradio, tab, treeitem中的一种。html5规范中维护了这样一个清单，哪些元素有隐式的role属性，以及可以被显式修改的role属性的范围，可以参见： [http://www.w3.org/html/wg/drafts/html/master/dom.html#wai-aria](http://www.w3.org/html/wg/drafts/html/master/dom.html#wai-aria)
+aria-label和role是最好理解的，aria-label作为一个读屏提示存在，读屏软件会首先读label中的值，role则是提示当前标签所扮演的角色。html5规定，我们可以按照ARIA标准中的规定对html元素设定相关role和aria-*属性，在html4中则不支持这样做。同时html5为一些特定的元素隐式赋予了role属性，比如说html中的input type="checkbox"元素，默认就会有一个role="checkbox",对于这样的元素，我们要切记不要再画蛇添足或者弄巧成拙的非必要的修改其role属性。不仅仅是改变了其默认的语义含义，还有可能存在我们潜在难于发现的错误。但有些情况下又要具体分析，举例来说，有时候我们会使用a标签来模拟一个提交按钮，在提交的时候进行一些表单验证的工作。默认情况下，a标签的role属性是link，显然不适用于我们上边提到的这种使用场景，那就需要我们显式修改其role属性为button。role属性的修改必然不是随心所欲的，a标签就不适合做listbox，所以html5中也规定了某一个元素都可以被赋予哪些role属性，比如说a就只能被赋予：button, checkbox, link, menuitem, menuitemcheckbox, menuitemradio, tab, treeitem中的一种。html5规范中维护了这样一个清单，哪些元素有隐式的role属性，以及可以被显式修改的role属性的范围，可以参见： [http://www.w3.org/html/wg/drafts/html/master/dom.html#wai-aria](http://www.w3.org/html/wg/drafts/html/master/dom.html#wai-aria)。只是看规范可能不是那么容易理解，可以参见另一个网站，上边通过各种示例来说明各个属性的应用，参见： [http://test.cita.illinois.edu/](http://test.cita.illinois.edu/)
 
-aria-autocomplete: 默认情况下autocomplete是设置为none的，这种情况下随着用户的输入，我们必须通过js显式地控制焦点将其聚焦到匹配到的list选项，
+至于上边提到的其他属性，在后边的章节中我也将为大家一一详细解释。
+
 
