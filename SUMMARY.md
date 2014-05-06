@@ -51,7 +51,7 @@
     * [视网膜屏的优化](basics/README.md)
     * [ES5的API实现差异](basics/README.md)
     * [Android 2.x 4.x等等区别](basics/README.md)
-* [可用性无障碍](basics/README.md)
+* [可用性无障碍](accessibility/README.md)
     * [WCAG1.0和WCAG2.0](basics/README.md)
     * [高可用性界面-语义化的html5元素](basics/README.md)
     * [ARIA 无障碍化属性](basics/README.md)
