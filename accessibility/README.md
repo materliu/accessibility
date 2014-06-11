@@ -8,7 +8,7 @@ WAI-ARIA标准的设计初衷是希望我们开发者在设计网站的时候能
 
 举例来说，你需要定义一个同时允许输入和下拉选择的组合下拉列表框，如果按照html4时代的写法，我们可能会像下边这样写：
 
-```
+```html
 <!-- 示例一 -->
 <input class="combobox-input" type="text"/>
 <ul class="chose-list">
@@ -23,7 +23,7 @@ WAI-ARIA标准的设计初衷是希望我们开发者在设计网站的时候能
 使用了ARIA就不一样了，下边是www.w3.org给出的一个标准示例, 我做了一些修改来使它更易于我们说明问题：
 
 
-```
+```html
 <!-- 示例二 -->
 <input class="combobox-input"
        type="text"
